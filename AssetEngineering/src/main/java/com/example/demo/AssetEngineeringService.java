@@ -5,12 +5,12 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 @RestController
-@RequestMapping("/assets")
+@RequestMapping("/assetsEngg")
 public class AssetEngineeringService {
 
 	@GetMapping("/getEngineering")
 	public String getEngineeringInfo() {
-		return "AssetEngineering";
+		return "Asset Engineering";
 	}
 	
 }

@@ -1,0 +1,20 @@
+zuul:
+  prefix: /pump
+  routes:
+    asset-engineering-service:
+      path: /engg/**
+      serviceId: ASSET-ENGINEERING-SERVICE
+      
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:9001/eureka
+      
+spring:
+  application:
+    name: pump-gateway
+    
+server:
+  port: 8001
+  
+ 
