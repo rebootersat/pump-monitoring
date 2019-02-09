@@ -4,6 +4,7 @@ import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -23,8 +24,8 @@ public class AssetEngineeringService {
 	}
 	
 	@GetMapping("/getAsset/{assetID}")
-	public Asset getAssetByID() {
-		return assetService.getAssetById("PUMP01");
+	public Asset getAssetByID(@PathVariable("assetID") String assetID) {
+		return assetService.getAssetById(assetID);
 	}
 	
 	@GetMapping("getEn")

@@ -4,6 +4,9 @@ zuul:
     asset-engineering-service:
       path: /engg/**
       serviceId: ASSET-ENGINEERING-SERVICE
+    asset-config-service:
+      path: /config/**
+      serviceId: ASSET-CONFIG-SERVICE
       
 eureka:
   client:
