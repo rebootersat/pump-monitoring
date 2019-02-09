@@ -1,4 +1,4 @@
-package com.sandeep.org.asset.configure;
+package com.sandeep.org.asset.configure.service;
 
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
