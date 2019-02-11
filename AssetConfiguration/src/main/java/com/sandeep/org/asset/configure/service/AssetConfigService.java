@@ -27,6 +27,11 @@ public class AssetConfigService {
 	}
 	
 	@Transactional
+	public Asset getByName(String assetID) {
+		return repository.findByAssetID(assetID);
+	}
+	
+	@Transactional
 	public void delete(Asset asset) {
 		repository.delete(asset);
 	}

@@ -6,4 +6,6 @@ import com.sandeep.org.asset.configure.models.Asset;
 
 public interface AssetConfigRepository extends JpaRepository<Asset, String>{
 
+	Asset findByAssetID(String assetID);
+
 }
